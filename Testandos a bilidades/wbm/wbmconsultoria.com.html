@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wbmconsultoria</title>
+</head>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  <div class="letra">
+    <p>Esta é a frase 1</p>
+  </div>
+  
+  <script>
+    var letra = document.querySelector(".letra");
+  
+    var frases = ["Esta é a frase 1", "Esta é a frase 2", "Esta é a frase 3"];
+  
+    setInterval(function() {
+      letra.innerHTML = frases[Math.floor(Math.random() * frases.length)];
+    }, 1000);
+  </script>
+  
+</body>
+</html>
